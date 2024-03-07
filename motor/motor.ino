@@ -37,19 +37,19 @@ void Fw() { //モーター前進
   analogWrite(MRM, 255);
 }
 
-void Right() { //モーター右旋回
+void Right() { //モーター右回転
   digitalWrite(ML1, HIGH);
   digitalWrite(ML2, LOW);
   analogWrite(MLM, 255);
   digitalWrite(MR1, HIGH);
   digitalWrite(MR2, LOW);
-  analogWrite(MRM, 100);
+  analogWrite(MRM, 255);
 }
 
-void Left() { //モーター左旋回
+void Left() { //モーター左回転
   digitalWrite(ML1, LOW);
   digitalWrite(ML2, HIGH);
-  analogWrite(MLM, 100);
+  analogWrite(MLM, 255);
   digitalWrite(MR1, LOW);
   digitalWrite(MR2, HIGH);
   analogWrite(MRM, 255);
