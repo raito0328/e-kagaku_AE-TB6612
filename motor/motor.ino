@@ -16,15 +16,15 @@ void setup() {
 }
 
 void loop() {
-  Fw();
+  Fw(); //モーター前進
   delay(1000);
-  Right();
+  Right(); //モーター右回転
   delay(1000);
-  Left();
+  Left(); //モーター左回転
   delay(1000);
-  Back();
+  Back(); //モーター後退
   delay(1000);
-  Stop();
+  Stop(); //モーター停止
   delay(1000);
 }
 
