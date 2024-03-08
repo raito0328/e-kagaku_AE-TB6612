@@ -1,8 +1,8 @@
-#define ML1 3
-#define ML2 4
+#define ML1 6
+#define ML2 5
 #define MLM A0
-#define MR1 5
-#define MR2 6
+#define MR1 3
+#define MR2 4
 #define MRM A1
 
 void setup() {
@@ -38,20 +38,20 @@ void Fw() { //モーター前進
 }
 
 void Right() { //モーター右回転
-  digitalWrite(ML1, HIGH);
-  digitalWrite(ML2, LOW);
-  analogWrite(MLM, 255);
-  digitalWrite(MR1, HIGH);
-  digitalWrite(MR2, LOW);
-  analogWrite(MRM, 255);
-}
-
-void Left() { //モーター左回転
   digitalWrite(ML1, LOW);
   digitalWrite(ML2, HIGH);
   analogWrite(MLM, 255);
   digitalWrite(MR1, LOW);
   digitalWrite(MR2, HIGH);
+  analogWrite(MRM, 255);
+}
+
+void Left() { //モーター左回転
+  digitalWrite(ML1, HIGH);
+  digitalWrite(ML2, LOW);
+  analogWrite(MLM, 255);
+  digitalWrite(MR1, HIGH);
+  digitalWrite(MR2, LOW);
   analogWrite(MRM, 255);
 }
 
